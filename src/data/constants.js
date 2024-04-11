@@ -235,7 +235,7 @@ export const projects = [
     description:
       "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
     image:
-      "",
+      "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/booking.PNG",
     tags: [
       "React Js",
       "MongoDb",
@@ -255,7 +255,7 @@ export const projects = [
     description:
       "YouTube is an online video sharing and social media platform. Build this youtube clone using React and Tailwind CSS. Used Rapid API for fetching data for the youtube clone. Used React Player a react component for playing a variety of URLs, including file paths, YouTube etc. Used Axios for fetching data from the rapid api and display into the clone",
     image:
-      "",
+      "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/youtube.PNG",
     tags: ["React Js", "Rapid API", "Node Js", "Express Js", "Redux"],
     category: "web app",
     github: "https://github.com/DhruvDhari/Youtube_Clone",
@@ -286,7 +286,7 @@ export const projects = [
     description:
       "This is a fun Dice Game that you can play in your free time to pass your time. In this Dice game you need to choose a number. After chosing the number we roll the dice. If the number on die is same as selected number, then we score +(selected number) or else we loose 2 points.",
     image:
-      "",
+      "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/dicegame.PNG",
     tags: ["HTML","Css","Js","React+Vite"],
     category: "web app",
     github: "https://github.com/DhruvDhari/Dice_Game",
@@ -299,7 +299,7 @@ export const projects = [
     description:
       "Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights.",
     image:
-      "",
+      "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/flappybird.PNG",
     tags: ["Html","Css","Js"],
     category: "Web app",
     github: "https://github.com/DhruvDhari/Flappy_Bird_Game",
