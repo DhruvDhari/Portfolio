@@ -8,7 +8,7 @@ export const Bio = {
     "I firmly believe that the key to success lies in continuous learning and adaptation. I'm ready to put in all my efforts and I thrive on challenges and embrace them as opportunities for growth. I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results.",
   github: "https://github.com/DhruvDhari",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
+    "",
   linkedin: "https://www.linkedin.com/in/dhruv-dhari-7aba5621b/",
   twitter: "https://twitter.com/Dhruv12440865",
   insta: "https://www.instagram.com/dhruv2003_d/",
@@ -143,7 +143,7 @@ export const experiences = [
     img: "https://brainmentors-website-assets.s3.ap-south-1.amazonaws.com/assets/BMPLNewLogo.png",
     role: "Internship Trainee / Apprenticeship",
     company: "Brain Mentors Pvt Ltd",
-    date: "Jul 2023 - Aug 2023 ",
+    date: "Jul 2023 - Aug 2023",
     desc: "During my internship trainee, I embarked on an enriching journey to master the MERN stack. I delved into the intricacies of MongoDB, a flexible NoSQL database, I honed my skills in Express.js, mastering its capabilities for creating robust and scalable server-side applications. Leveraging Node.js, I gained insights into high-performance back-end services that seamlessly integrate with front-end interfaces.Central to my learning journey was React.js, a powerful JavaScript library for building dynamic and responsive user interfaces ",
     skills: [
       "ReactJS",
@@ -233,7 +233,7 @@ export const projects = [
     id: 9,
     title: "Booking App",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "This Booking Application leverages the power of Typescript,MongoDB, Express.js, React.js, and Node.js to deliver a seamless and intuitive experience. Users can easily browse available services, select preferred dates and times, and make reservations with just a few clicks. With a responsive and user-friendly interface built on React.js, users can access the application from any device, ensuring convenience and accessibility.",
     image:
       "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/booking.PNG",
     tags: [
