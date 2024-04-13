@@ -53,10 +53,10 @@
 
 import React from 'react'
 
-const>Hiiiiiii = () => {
+const App = () => {
   return (
-    <div>Hiiiiiii</div>
+    <div>hiii</div>
   )
 }
 
-export default>Hiiiiiii
+export default App
