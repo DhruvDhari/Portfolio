@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
-// import { NavLink } from "react-router-dom";
 import { MenuRounded } from "@mui/icons-material";
 import { Link as LinkR } from "react-router-dom";
+import { Bio } from "../../data/constants"
+import CloseIcon from '@mui/icons-material/Close';
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -66,36 +67,38 @@ const NavLink = styled.a`
   }
 `;
 
-// const ButtonContainer = styled.div`
-//   width: 80%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: end;
-//   align-items: center;
-//   padding: 0 6px;
-//   @media screen and (max-width: 768px) {
-//     display: none;
-//   }
-// `;
+const ButtonContainer = styled.div`
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 6px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-// const GithubButton = styled.a`
-//   border: 1px solid ${({ theme }) => theme.primary};
-//   color: ${({ theme }) => theme.primary};
-//   justify-content: center;
-//   display: flex;
-//   align-items: center;
-//   border-radius: 20px;
-//   cursor: pointer;
-//   padding: 10px 20px;
-//   font-size: 16px;
-//   font-weight: 500;
-//   transition: all 0.6s ease-in-out;
-//   text-decoration: none;
-//   &:hover {
-//     background: ${({ theme }) => theme.primary};
-//     color: ${({ theme }) => theme.text_primary};
-//   }
-// `;
+const GithubButton = styled.a`
+  
+  border: 1px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primary};
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.6s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
 
 const MobileIcon = styled.div`
   height: 100%;
@@ -103,34 +106,35 @@ const MobileIcon = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.text_primary};
   display: none;
+  cursor: pointer;
   @media screen and (max-width: 768px) {
     display: block;
   }
 `;
 
-// const MobileMenu = styled.ul`
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: start;
-//   gap: 16px;
-//   padding: 0 6px;
-//   list-style: none;
-//   width: 100%;
-//   padding: 12px 40px 24px 40px;
-//   background: ${({ theme }) => theme.card_light + 99};
-//   position: absolute;
-//   top: 80px;
-//   right: 0;
+const MobileMenu = styled.ul`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  padding: 0 6px;
+  list-style: none;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.card_light + 99};
+  position: absolute;
+  top: 80px;
+  right: 0;
 
-//   transition: all 0.6s ease-in-out;
-//   transform: ${({ isOpen }) =>
-//     isOpen ? "translateY(0)" : "translateY(-100%)"};
-//   border-radius: 0 0 20px 20px;
-//   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-//   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-//   z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
-// `;
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(0)" : "translateY(-100%)"};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+`;
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();
@@ -144,7 +148,7 @@ const Navbar = () => {
         </NavLogo>
 
         <MobileIcon onClick={() => setIsOpen(!isOpen)}>
-          <MenuRounded style={{ color: "inherit" }} />
+          {(isOpen)?<CloseIcon/>:<MenuRounded style={{ color: "inherit" }}/>}
         </MobileIcon>
         <NavItems>
         <NavLink href="#About">About</NavLink>
@@ -153,6 +157,41 @@ const Navbar = () => {
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </NavItems>
+        {isOpen && (
+          <MobileMenu isOpen={isOpen}>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
+              About
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
+              Skills
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
+              Experience
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
+              Projects
+            </NavLink>
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
+              Education
+            </NavLink>
+            <GithubButton
+              href={Bio.github}
+              target="_Blank"
+              style={{
+                background: theme.primary,
+                color: theme.text_primary,
+              }}
+            >
+              Github Profile
+            </GithubButton>
+          </MobileMenu>
+        )}
+
+        <ButtonContainer>
+          <GithubButton href={Bio.github} target="_Blank">
+            Github Profile
+          </GithubButton>
+        </ButtonContainer>
       </NavbarContainer>
     </Nav>
   );
@@ -160,12 +199,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-// import React from 'react'
-
-// const Navbar = () => {
-//   return (
-//     <div>Navbar</div>
-//   )
-// }
-
-// export default Navbar
