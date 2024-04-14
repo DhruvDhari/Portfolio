@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { projects } from "../../data/constants";
-import ProjectCard from "../../cards/ProjectCard";
+import { experiences } from "../../data/constants";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import ExperienceCard from "../../cards/ExperienceCard";
 
 const Container = styled.div`
 margin-top: 100px;
@@ -10,7 +12,6 @@ flex-direction: column;
 justify-content:center;
 position: relative;
 z-index: 1;
-padding: 0 16px;
 align-items: center;
 `;
 const Wrapper = styled.div`
@@ -49,42 +50,31 @@ const Desc = styled.div`
   }
 `;
 
-
-
-const CardContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-`;
-
-const Projects = ({ openModal, setOpenModal }) => {
-
+const Experience = () => {
   return (
-    <Container id="Projects">
+    <Container id="Experience">
       <Wrapper>
-        <Title>Projects</Title>
+        <Title>Experience</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          Here are some of my projects.
+          My work experience as a software engineer
         </Desc>
-        <CardContainer>
-          {projects
-            .map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
-        </CardContainer>
+
+        <VerticalTimeline lineColor={"#D8BFD8"} >
+          {experiences.map((experience, index) => (
+            
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
       </Wrapper>
     </Container>
   );
 };
 
-export default Projects;
+export default Experience;
