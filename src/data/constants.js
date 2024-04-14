@@ -268,7 +268,7 @@ export const projects = [
     description:
       "A Spotify Clone is a music streaming platform designed to replicate the features and functionalities of the popular music service, Spotify. It offers users the ability to stream a vast library of music, create playlists, and enjoy a personalized music experience. In this Clone we can do more like uploading your own songs and enjoy them.",
     image:
-      "https://private-user-images.githubusercontent.com/108563803/320284024-f848140d-8b65-4970-b853-b5e685477da6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTI4MzE4NTcsIm5iZiI6MTcxMjgzMTU1NywicGF0aCI6Ii8xMDg1NjM4MDMvMzIwMjg0MDI0LWY4NDgxNDBkLThiNjUtNDk3MC1iODUzLWI1ZTY4NTQ3N2RhNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxMVQxMDMyMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OTNkNGZjNGYwN2JkM2FiMmYxYmU3OGM4NmU1NmM5YjRiZmI5NWM1ZTRlZmFjN2EzZTA3NjhmYTY4MzVjYzc0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-Cbc0Puxk1Ye6xb2dPK68CVHg6G9LDh3GVEyfJO9iq8",
+      "https://raw.githubusercontent.com/DhruvDhari/Portfolio/main/src/images/spotify.png",
     tags: [
       "React Js",
       "MongoDb",
