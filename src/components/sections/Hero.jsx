@@ -218,14 +218,12 @@ const Hero = () => {
     <div id="About">
       <HeroContainer>
         <HeroBg>
-          {/* <StarCanvas />
-          <HeroBgAnimation /> */}
         </HeroBg>
 
-        {/* <motion.div {...headContainerAnimation}> */}
+
           <HeroInnerContainer>
             <HeroLeftContainer>
-              {/* <motion.div {...headTextAnimation}> */}
+           
                 <Title>
                   Hi, I am <br /> {Bio.name}
                 </Title>
@@ -241,25 +239,23 @@ const Hero = () => {
                     />
                   </Span>
                 </TextLoop>
-              {/* </motion.div> */}
-
-              {/* <motion.div {...headContentAnimation}> */}
+              
                 <SubTitle>{Bio.description}</SubTitle>
-              {/* </motion.div> */}
+             
 
               <ResumeButton href={Bio.resume} target="_blank">
                 Check Resume
               </ResumeButton>
             </HeroLeftContainer>
             <HeroRightContainer>
-              {/* <motion.div {...headContentAnimation}> */}
+              
                 <Tilt>
                   <Img src={HeroImg} alt="Dhruv Dhari" />
                 </Tilt>
-              {/* </motion.div> */}
+      
             </HeroRightContainer>
           </HeroInnerContainer>
-        {/* </motion.div> */}
+
       </HeroContainer>
     </div>
   )

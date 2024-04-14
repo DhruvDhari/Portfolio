@@ -11,6 +11,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import { useState } from "react";
 import ProjectDetails from "./Dialog/ProjectDetails";
+import Footer from "./components/sections/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -54,7 +55,7 @@ function App() {
             <Education />
             <Contact />
           </Wrapper>
-
+          <Footer/>
           {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           )}
