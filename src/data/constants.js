@@ -8,7 +8,7 @@ export const Bio = {
     "I firmly believe that the key to success lies in continuous learning and adaptation. I'm ready to put in all my efforts and I thrive on challenges and embrace them as opportunities for growth. I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results.",
   github: "https://github.com/DhruvDhari",
   resume:
-    "",
+    "https://drive.google.com/file/d/12eu2mZrHgRZAVzZLglRAFFeMrg8V1ksV/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/dhruv-dhari-7aba5621b/",
   twitter: "https://twitter.com/Dhruv12440865",
   insta: "https://www.instagram.com/dhruv2003_d/",
